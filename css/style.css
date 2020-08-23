@@ -268,8 +268,8 @@ img {
 
 
 .widget-container-row {
-    padding-top: 14vmax;
-    padding-bottom: 2vmax;
+    padding-top: 7vmax;
+    padding-bottom: 4vmax;
 }
 
 @media only screen and (max-width: 991px) {

@@ -1,4 +1,12 @@
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+/*
+============================================
+; Title: 
+; Author: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+; Date: 23 August 2020
+; Modified By: King Major
+; Description: This styling creates social media buttons.
+;===========================================
+*/
 
 .text-widget ul {
     list-style-type: none;
@@ -7,73 +15,140 @@
 
 }
 
-i {
-    text-align: center !important;
-}
+/* .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+} */
 
-a.btn-social,
-.btn-social
-{
+.fa {
     border-radius: 50%;
     color: #ffffff !important;
-    height: 54px;
-    line-height: 54px;
-    margin: 8px 4px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 1vh;
+    margin-right: 3vw;
+    text-align: center;
     text-decoration: none;
     transition: background-color .3s;
-    width: 54px;
-}
-
-.btn-social .fa,.btn-social i
-{
-    backface-visibility: hidden;
-    transform: scale(1);
-    transition: all .25s;
-}
-.btn-social:hover,.btn-social:focus
-{
-    color: #fff;
-    outline: none;
-    text-decoration: none;
-}
-
-.btn-social:hover .fa,
-.btn-social:focus .fa,
-.btn-social:hover i,
-.btn-social:focus i {
-    transform: scale(1.3);
-}
-
-.btn-social.btn-xs {
-    font-size: 9px;
-    height: 24px;
-    line-height: 13px;
-    margin: 6px 2px;
-    width: 24px;
-}
-
-.btn-social.btn-sm {
-    font-size: 13px;
-    height: 36px;
-    line-height: 18px;
-    margin: 6px 2px;
-    width: 36px;
-}
-
-.btn-social.btn-lg {
-    font-size: 22px;
-    height: 72px;
-    line-height: 40px;
-    margin: 10px 6px;
-    width: 72px;
-}
-
-
-
-.btn-media {
+    width: 40px !important;
     background-color: #0f1e49;
+    color: rgb(177, 177, 201);
+    font-size: 3rem;
+    outline: none;
+    text-decoration: none !important;
 }
 
-.btn-media:hover {
-    background-color: #83c3f3;
+.fa:hover {
+    opacity: 0.7;
 }
+
+/* .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+} */
