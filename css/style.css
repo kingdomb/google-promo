@@ -197,6 +197,7 @@ img {
 
 #info2 {
     margin: 20px 0 60px 0;
+    padding-top: 125px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -240,19 +241,41 @@ img {
 }
 
 #contact form {
-    padding: 50px 20px;
     color: #fff;
     width: 30vmax;
     min-width: 20vw;
-    float: left;
-    left: 8vmax;
-    top: 3vh;
+    
+    
+    margin-top: 2vh;
+      margin-right: 6vw;
+      margin-left: 19vw !important;
+      margin-bottom: 2vh;
+}
+
+#contact form .form-control,
+#contact form .btn {
+    border: none;
 }
 
 .form-background {
-    background-color: rgb(247, 241, 221);
-    color: #555;
+    color: #0f1e49;
 }
+
+.form-background::placeholder,
+.form-background { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  background-color: rgb(135, 135, 182) !important;
+  color: #0f1e49;
+  opacity: 1; /* Firefox */
+}
+
+.form-background:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #0f1e49;
+}
+
+.form-background::-ms-input-placeholder { /* Microsoft Edge */
+  color: #0f1e49;
+}
+
 
 #contact form label {
     font-size: 1.5rem;
@@ -261,9 +284,9 @@ img {
 }
 
 
-.hiden-form,
+.hidden-form,
 .hidden-widgets {
-    display: none;
+    display: none !important;
 }
 
 
