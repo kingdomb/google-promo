@@ -1,5 +1,23 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+}
+
 body{
-    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    max-width: 100vw;
+}
+
+@font-face {
+    font-family: 'PierSans';
+    src: url(../fonts/PierSans-Bold.otf);
+    font-style: normal;
+    font-weight: 800;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -8,6 +26,12 @@ h1,h2,h3,h4,h5,h6 {
 
 p {
     font-family: 'Roberto';
+    font-size: 3rem;
+    letter-spacing: .04vw;
+}
+
+nav {
+    width: 100%;
 }
 
 .navbar-default {
@@ -16,20 +40,81 @@ p {
     font-family: 'Poppins';
 }
 
-.navbar-brand {
-    font-size: 20px !important;
-    color: #000 !important;
-    font-weight: bold;
+.nav-logo {
+    font-size: 4.0rem !important;
+    letter-spacing: .14vw;
+    font-family: 'PierSans';
+    color: rgb(56, 56, 56);
+    color: rgb(248, 29, 0);
+}
+
+.nav-brand {
+    padding-left: 5px;
+    font-size: 4.0rem !important;
+    letter-spacing: .06vw;
+    color: rgb(56, 56, 56);
+    font-weight: 300;
+    font-family: 'Roboto', "Helvetica Neue", sans-serif;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-brand{
+    margin: 0px !important;
+  }
+  .navbar-header {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  nav.navbar{
+    background: transparent;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 276px) {
+  .nav-brand,
+  .nav-logo {
+    font-size: 2.5rem !important;
+  }
+}
+
+#navbar ul {
+    float: right !important;
+    text-align: right !important;
+  }
+
+#navbar li a {
+  font-size: 2rem;
+  letter-spacing: .3vw;
+  padding: 15px 2vw;
+}
+
+.navbar-header{
+    background-color: #0f1e49;
+    height: 7vh;
+    min-height: 60px;
+}
+
+.btn {
+    border-radius: 3px;
 }
 
 /*REQUIRED FOR SMOOTH SCROLLING WHEN USING navbar-fixed-top in HTML
 SO THAT FIRST SECTION IS NOT OVERLAPPED BY THE NAVBAR*/
 #showcase {
-    padding-top: 135px; 
+    padding-top: 135px !important;
+}
+
+img {
+    max-width: 100vw;
 }
 
 #showcase h1 {
-    font-size: 50px;
+    font-size: 5rem;
     margin-bottom: 20px;
 }
 
@@ -38,8 +123,23 @@ SO THAT FIRST SECTION IS NOT OVERLAPPED BY THE NAVBAR*/
     margin-left: 60px;
 }
 
+#showcase p {
+    font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 1.6rem;
+}
+
 #showcase .showcase-right {
     margin-top: 90px;
+}
+
+@media only screen and (max-width: 991px) {
+    #showcase .showcase-right {
+        margin-right: 6vw;
+        margin-left: 10vw !important;
+    }
+    #showcase .showcase-right a {
+        margin-top: 1vmax;
+    }
 }
 
 #testimonial {
@@ -49,49 +149,193 @@ SO THAT FIRST SECTION IS NOT OVERLAPPED BY THE NAVBAR*/
     margin-top: 40px;
 }
 
+@media only screen and (max-width: 991px) {
+  #testimonial p {
+        margin-right: 6vw;
+        margin-left: 6vw;
+    }
+  #info1 .info-left {
+        text-align: center;
+    }
+    #info1 img {
+        height: 40vmax;
+    }
+}
+
 #testimonial p {
     font-size: 32px;
+    font-size: 3rem;
     font-family: 'Josefin Sans';
     color: #000;
 }
 
 #testimonial p.customer {
-    font-size: 20px;
+    font-size: 2.1rem;
     color: #666;
 }
 
 #info1 .info-right {
     margin-top: 135px;
+    margin-left: 1px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  #info1 .info-right {
+        margin-top: -8vh;
+        margin-right: 6vw;
+        margin-left: 10vw !important;
+        margin-bottom: 8vh;
+    }
+  #info1 .info-left {
+        text-align: center;
+    }
+    #info1 img {
+        height: 40vmax;
+    }
+
 }
 
 #info2 {
     margin: 20px 0 60px 0;
 }
 
+@media only screen and (max-width: 991px) {
+  
+  #info2 .info-left {
+      margin-top: 8vh;
+      margin-right: 6vw;
+      margin-left: 10vw !important;
+      margin-bottom: 8vh;
+    }
+    #info2 .info-right {
+      margin-right: 6vw;
+      margin-left: 10vw !important;
+      margin-bottom: 8vh;
+    }
+}
+
+
+
+
 #contact {
     background: url(../img/image3.png) no-repeat;
-    padding: 0px;
     border-top: rgb(233, 233, 233) 4px solid;
     border-bottom: rgb(233, 233, 233) 7px solid;
     background-size:100% 100%;
+    min-height: 50vh !important;
+    background-position: center;
+    background-position-y: 1%;
+    background-size: cover;
+    position: relative;
 }
 
 #overlay {
-    background-color: rgb(0, 0, 0, 0.30);
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #0f1e49;
+   opacity: 0.6;
 }
-  
 
 #contact form {
-    padding: 40px;
+    padding: 50px 20px;
     color: #fff;
-    width: 45%;
+    width: 30vmax;
+    min-width: 20vw;
     float: left;
+    left: 8vmax;
+    top: 3vh;
+}
+
+.form-background {
+    background-color: rgb(247, 241, 221);
+    color: #555;
+}
+
+#contact form label {
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    font-weight: 100;
+}
+
+
+.hiden-form,
+.hidden-widgets {
+    display: none;
+}
+
+
+.widget-container-row {
+    padding-top: 14vmax;
+    padding-bottom: 2vmax;
+}
+
+@media only screen and (max-width: 991px) {
+    .widget-container {
+      margin-top: 2vh;
+      margin-right: 6vw;
+      margin-left: 10vw !important;
+      margin-bottom: 2vh;
+    }
+
+    .widget-container-row {
+        padding-top: 6vmax;
+        padding-bottom: 6vmax;
+    }
+    .footer-2 {
+        margin-top: 7vh;
+    }
+}
+
+
+
+h4 {
+    color: rgb(135, 135, 182);
+}
+
+h4.widget_title {
+    font-size: 2rem !important;
+    line-height: 19px !important;
+}
+
+.ruler {
+    width: 35px;
+    border:1px solid #3554aa;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.widget-container p {
+    letter-spacing: .18vw;
+}
+
+.widget-footer ul,
+.widget-footer #menu-footer_2 a,
+div .widget-footer p {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size:2rem !important;
+    color: rgb(177, 177, 201);
+    font-weight: 300;
+    font-family: 'Poppins';
+}
+
+.widget-footer #menu-footer_2 a {
+    margin-top: 10px;
 }
 
 footer {
     padding: 25px;
+    background-color: #0f1e49;
+    color: white;
+}
+
+footer>p {
+        font-family: 'Poppins' !important;
+        font-weight: 200;
+        font-size: 1.5rem;
+
 }
