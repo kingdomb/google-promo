@@ -56,7 +56,7 @@ nav {
 }
 
 .nav-logo {
-    font-size: 4.0rem !important;
+    font-size: 4.0rem;
     letter-spacing: .14vw;
     font-family: 'PierSans';
     color: rgb(56, 56, 56);
@@ -65,7 +65,7 @@ nav {
 
 .nav-brand {
     padding-left: 5px;
-    font-size: 4.0rem !important;
+    font-size: 4.0rem;
     letter-spacing: .06vw;
     color: rgb(56, 56, 56);
     font-weight: 300;
@@ -98,8 +98,8 @@ nav {
 }
 
 #navbar ul {
-    float: right !important;
-    text-align: right !important;
+    float: right;
+    text-align: right;
   }
 
 #navbar li a {
@@ -121,7 +121,7 @@ nav {
 /*REQUIRED FOR SMOOTH SCROLLING WHEN USING navbar-fixed-top in HTML
 SO THAT FIRST SECTION IS NOT OVERLAPPED BY THE NAVBAR*/
 #showcase {
-    padding-top: 135px !important;
+    padding-top: 135px;
 }
 
 img {
@@ -150,7 +150,7 @@ img {
 @media only screen and (max-width: 991px) {
     #showcase .showcase-right {
         margin-right: 6vw;
-        margin-left: 10vw !important;
+        margin-left: 10vw;
     }
     #showcase .showcase-right a {
         margin-top: 1vmax;
@@ -191,14 +191,19 @@ img {
 
 #info1 .info-right {
     margin-top: 135px;
-    margin-left: 1px !important;
+    margin-left: 1px;
 }
 
 @media only screen and (max-width: 991px) {
-  #info1 .info-right {
-        margin-top: -8vh;
+    #info1 div.carousel-inner {
+        display: inline-block;
+        left: 25%
+    }
+
+    #info1 .info-right {
+        margin-top: -4vh;
         margin-right: 6vw;
-        margin-left: 10vw !important;
+        margin-left: 10vw;
         margin-bottom: 8vh;
     }
   #info1 .info-left {
@@ -220,22 +225,22 @@ img {
   #info2 .info-left {
       margin-top: 8vh;
       margin-right: 6vw;
-      margin-left: 10vw !important;
+      margin-left: 10vw;
       margin-bottom: 8vh;
     }
     #info2 .info-right {
       margin-right: 6vw;
-      margin-left: 10vw !important;
+      margin-left: 10vw;
       margin-bottom: 8vh;
     }
 }
 
 #contact {
-    background: url(../img/image3.png) no-repeat;
+    background: url(../img/image3.jpg) no-repeat;
     border-top: rgb(233, 233, 233) 4px solid;
     border-bottom: rgb(233, 233, 233) 7px solid;
     background-size:100% 100%;
-    min-height: 50vh !important;
+    min-height: 50vh;
     background-position: center;
     background-position-y: 1%;
     background-size: cover;
@@ -259,9 +264,9 @@ img {
     
     
     margin-top: 2vh;
-      margin-right: 6vw;
-      margin-left: 19vw !important;
-      margin-bottom: 2vh;
+    margin-right: 6vw;
+    margin-left: 19vw;
+    margin-bottom: 2vh;
 }
 
 #contact form .form-control,
@@ -269,15 +274,11 @@ img {
     border: none;
 }
 
-.form-background {
-    color: #0f1e49;
-}
-
 .form-background::placeholder,
 .form-background { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  background-color: rgb(135, 135, 182) !important;
-  color: #0f1e49;
+  background-color: rgb(135, 135, 182);
   opacity: 1; /* Firefox */
+  color: #0f1e49;
 }
 
 .form-background:-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -290,15 +291,16 @@ img {
 
 
 #contact form label {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Poppins';
     font-weight: 100;
+    letter-spacing: .1em;
 }
 
 
 .hidden-form,
 .hidden-widgets {
-    display: none !important;
+    display: none;
 }
 
 
@@ -312,7 +314,7 @@ img {
     .widget-container {
       margin-top: 2vh;
       margin-right: 6vw;
-      margin-left: 10vw !important;
+      margin-left: 10vw;
       margin-bottom: 2vh;
     }
 
@@ -331,8 +333,8 @@ h4 {
 }
 
 h4.widget_title {
-    font-size: 2rem !important;
-    line-height: 19px !important;
+    font-size: 2rem;
+    line-height: 19px;
 }
 
 .ruler {
@@ -352,7 +354,7 @@ div .widget-footer p {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    font-size:2rem !important;
+    font-size:2rem;
     color: rgb(177, 177, 201);
     font-weight: 300;
     font-family: 'Poppins';
@@ -369,7 +371,7 @@ footer {
 }
 
 footer>p {
-        font-family: 'Poppins' !important;
+        font-family: 'Poppins';
         font-weight: 200;
         font-size: 1.5rem;
 
