@@ -277,6 +277,10 @@ img {
     border: none;
 }
 
+#contact form .btn {
+    margin-top: 1.5vh;
+}
+
 .form-background::placeholder,
 .form-background { /* Chrome, Firefox, Opera, Safari 10.1+ */
   background-color: rgb(135, 135, 182);
