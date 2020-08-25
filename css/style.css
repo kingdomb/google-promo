@@ -196,6 +196,12 @@ img {
     font-size: 2.8rem
 }
 
+@media only screen and (min-width: 991px) {
+    #info1 div.carousel-inner {
+        left: -7%;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     #info1 div.carousel-inner {
         display: inline-block;
