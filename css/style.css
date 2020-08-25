@@ -21,19 +21,19 @@ img {
     font-weight: 800;
 }
 
-/* ::-webkit-scrollbar {
-    width: 20px;
+::-webkit-scrollbar {
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #202020;
+    background-color: #f1f1f1;
     border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #fc4be1;
-    border-radius: 2px;
-} */
+    background-color: #0f1e49;
+    border-radius: 1px;
+}
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Poppins';
@@ -140,7 +140,7 @@ img {
 
 #showcase p {
     font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 1.6rem;
+    font-size: 2.3rem;
 }
 
 #showcase .showcase-right {
@@ -191,6 +191,11 @@ img {
     margin-left: 1px;
 }
 
+#info1 .info-right p {
+    font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 2.8rem
+}
+
 @media only screen and (max-width: 991px) {
     #info1 div.carousel-inner {
         display: inline-block;
@@ -213,8 +218,11 @@ img {
     padding-top: 125px;
 }
 
-info2 p {
-    font-family: 'Poppins';
+#info2 p {
+    font-family: 'Poppins' !important;
+    font-weight: 200;
+    font-size: 2.5rem;
+    margin-right: 5em; 
 }
 
 @media only screen and (max-width: 991px) {
