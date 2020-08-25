@@ -148,6 +148,10 @@ img {
 }
 
 @media only screen and (max-width: 991px) {
+    body {
+            overflow-x: hidden !important;
+
+    }
     #showcase .showcase-right {
         margin-right: 6vw;
         margin-left: 10vw;
@@ -205,7 +209,6 @@ img {
 @media only screen and (max-width: 991px) {
     #info1 div.carousel-inner {
         display: inline-block;
-        left: 25%;
     }
 
     #info1 .info-right {
