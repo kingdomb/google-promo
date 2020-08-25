@@ -220,6 +220,10 @@ img {
     padding-top: 125px;
 }
 
+info2 p {
+    font-family: 'Poppins';
+}
+
 @media only screen and (max-width: 991px) {
   
   #info2 .info-left {
