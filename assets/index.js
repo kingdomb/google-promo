@@ -8,7 +8,7 @@ var callback = function(){
     const contactForm = document.querySelector('form')
     const contactWidgets = document.querySelector('.widget-container-container')
     const navbarContact = document.getElementById('nav-menu-item-3')
-    const contactFormSubmit = document.getElementById('formSubmit')
+    const contactFormSubmit = document.getElementById('form-submit')
 
     contactLink.addEventListener('click', e => {
         e.preventDefault()
@@ -29,7 +29,8 @@ var callback = function(){
     contactFormSubmit.addEventListener('click', e => {
         e.preventDefault()
         if (e) {
-                contactForm.classList.add('hidden-form'); 
+                document.querySelector('form').reset()
+                contactForm.classList.add('hidden-form')
                 contactWidgets.classList.remove('hidden-widgets')  
             }
     })
