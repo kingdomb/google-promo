@@ -264,11 +264,9 @@ img {
 
 #contact form {
     color: #fff;
-    width: 30vmax;
+    width: 25vmax;
     min-width: 20vw;
-    
-    
-    margin-top: 2vh;
+    margin-top: 9vh;
     margin-right: 6vw;
     margin-left: 19vw;
     margin-bottom: 2vh;
@@ -300,8 +298,13 @@ img {
     font-family: 'Poppins';
     font-weight: 100;
     letter-spacing: .1em;
+    color: rgb(209, 209, 228);
 }
 
+#contact form .asterisk {
+    color: red;
+    font-size: 2.5rem;
+}
 
 .hidden-form,
 .hidden-widgets {
