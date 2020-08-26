@@ -44,7 +44,7 @@ var callback = function(){
         contactForm.style.marginTop = '4em'
 
         // Change the content of the form element 
-        contactForm.innerHTML = 'Your message was successfully delivered. Someone from our team will contact you shortly. Thanks!';
+        contactForm.innerHTML = 'Your message was delivered. Someone from our team will contact you shortly. Thanks!';
         
         const submitMessage = _ => {
           if (e) {
