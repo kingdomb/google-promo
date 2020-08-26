@@ -173,25 +173,30 @@ img {
     margin-top: 40px;
 }
 
+#testimonial p {
+    font-size: 5rem;
+    font-family: 'Josefin Sans';
+    color: #000;
+}
+
 @media only screen and (max-width: 991px) {
   #testimonial p {
         margin-right: 6vw;
         margin-left: 6vw;
+        font-size: 4rem;
     }
+
+    #testimonial p.customer {
+        font-size: 3rem;
+    }
+
     #info1 img {
         height: 40vmax;
     }
 }
 
-#testimonial p {
-    font-size: 32px;
-    font-size: 4rem;
-    font-family: 'Josefin Sans';
-    color: #000;
-}
-
 #testimonial p.customer {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #666;
 }
 
