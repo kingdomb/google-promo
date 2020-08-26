@@ -1,7 +1,7 @@
 *, html {
     margin: 0;
     padding: 0;
-    font-size: 8px;
+    font-size: 4px;
 }
 
 body{
@@ -39,12 +39,6 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Poppins';
 }
 
-p {
-    font-family: 'Roberto';
-    font-size: 3rem;
-    letter-spacing: .04vw;
-}
-
 nav {
     width: 100vw;
 }
@@ -56,7 +50,7 @@ nav {
 }
 
 .nav-logo {
-    font-size: 4.0rem;
+    font-size: 8rem;
     letter-spacing: .14vw;
     font-family: 'PierSans';
     color: rgb(56, 56, 56);
@@ -65,7 +59,7 @@ nav {
 
 .nav-brand {
     padding-left: 5px;
-    font-size: 4.0rem;
+    font-size: 8rem;
     letter-spacing: .06vw;
     color: rgb(56, 56, 56);
     font-weight: 300;
@@ -84,16 +78,31 @@ nav {
 }
 
 @media only screen and (max-width: 767px) {
-  nav.navbar{
+  nav.navbar li{
+    background: white;
+  }
+  
+  nav.navbar li.dropdown_home {
+    margin-top: -1vh;
+  }
+  
+  nav a#nav-menu-item-3 {
+   border-bottom-left-radius: 5px !important;
+  }
+  
+  nav.navbar {
     background: transparent;
     border: none;
   }
 }
 
-@media only screen and (max-width: 276px) {
+@media only screen and (max-width: 296px) {
   .nav-brand,
   .nav-logo {
-    font-size: 2.5rem !important;
+    font-size: 4rem !important;
+  }
+  .nav-brand {
+    padding-left: 0px;
   }
 }
 
@@ -103,7 +112,7 @@ nav {
   }
 
 #navbar li a {
-  font-size: 2rem;
+  font-size: 4.5rem;
   letter-spacing: .3vw;
   padding: 15px 2vw;
 }
@@ -140,7 +149,7 @@ img {
 
 #showcase p {
     font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 2.3rem;
+    font-size: 4rem;
 }
 
 #showcase .showcase-right {
@@ -148,10 +157,6 @@ img {
 }
 
 @media only screen and (max-width: 991px) {
-    body {
-            overflow-x: hidden !important;
-
-    }
     #showcase .showcase-right {
         margin-right: 6vw;
         margin-left: 10vw;
@@ -180,13 +185,13 @@ img {
 
 #testimonial p {
     font-size: 32px;
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Josefin Sans';
     color: #000;
 }
 
 #testimonial p.customer {
-    font-size: 2.1rem;
+    font-size: 3rem;
     color: #666;
 }
 
@@ -195,9 +200,13 @@ img {
     margin-left: 1px;
 }
 
+.info-right h2 {
+    font-size: 5rem;
+}
+
 #info1 .info-right p {
     font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 2.8rem
+    font-size: 4.5rem
 }
 
 @media only screen and (min-width: 991px) {
@@ -209,6 +218,10 @@ img {
 @media only screen and (max-width: 991px) {
     #info1 div.carousel-inner {
         display: inline-block;
+    }
+
+    #info1 .info-right p {
+        font-size: 3rem;
     }
 
     #info1 .info-right {
@@ -227,26 +240,39 @@ img {
     padding-top: 125px;
 }
 
+#info2 h2 {
+font-size: 6rem;
+}
+
 #info2 p {
     font-family: 'Poppins' !important;
     font-weight: 200;
-    font-size: 2.5rem;
+    font-size: 5rem;
     margin-right: 5em; 
 }
 
 @media only screen and (max-width: 991px) {
-  
+  #info2 h2 {
+    font-size: 4rem;
+  }
+
+  #info2 p {
+    font-size: 3.5rem;
+  }
+
+
   #info2 .info-left {
-      margin-top: 8vh;
-      margin-right: 6vw;
-      margin-left: 10vw;
-      margin-bottom: 8vh;
-    }
-    #info2 .info-right {
-      margin-right: 6vw;
-      margin-left: 10vw;
-      margin-bottom: 8vh;
-    }
+    margin-top: 2vh;
+    margin-right: 6vw;
+    margin-left: 10vw;
+    margin-bottom: 4vh;
+  }
+  
+  #info2 .info-right {
+    margin-right: 6vw;
+    margin-left: 10vw;
+    margin-bottom: 3vh;
+  }
 }
 
 #contact {
@@ -305,9 +331,8 @@ img {
   color: #0f1e49;
 }
 
-
 #contact form label {
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-family: 'Poppins';
     font-weight: 100;
     letter-spacing: .1em;
@@ -316,14 +341,13 @@ img {
 
 #contact form .asterisk {
     color: red;
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 .hidden-form,
 .hidden-widgets {
     display: none;
 }
-
 
 .widget-container-row {
     padding-top: 7vmax;
@@ -354,7 +378,7 @@ h4 {
 }
 
 h4.widget_title {
-    font-size: 2rem;
+    font-size: 4rem;
     line-height: 19px;
 }
 
@@ -375,7 +399,7 @@ div .widget-footer p {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    font-size:2rem;
+    font-size: 4rem;
     color: rgb(177, 177, 201);
     font-weight: 300;
     font-family: 'Poppins';
@@ -392,8 +416,7 @@ footer {
 }
 
 footer>p {
-        font-family: 'Poppins';
-        font-weight: 200;
-        font-size: 1.5rem;
-
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 3.5rem;
 }
