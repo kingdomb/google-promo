@@ -39,7 +39,7 @@ var callback = function(){
         const originalForm = contactForm.innerHTML
 
         // Change the styling of the form element to properly display the submit message 
-        contactForm.style.fontSize = '4rem'
+        contactForm.style.fontSize = '8rem'
         contactForm.style.color = 'rgb(135, 135, 182)'
         contactForm.style.marginTop = '4em'
 
